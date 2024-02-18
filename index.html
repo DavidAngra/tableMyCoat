@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela de medidas | My Coat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tabela de medidas | My Coat</h1>
+    </header>
+
+    <section id="jaleco">
+      <h2>Jaleco</h2>
+
+      <form id="form-tableJaleco" class="form show">
+        <div id="refTable">
+          <label for="refJaleco">Referência:</label><br />
+          <input type="number" name="refJaleco" id="refJaleco" required />
+        </div>
+
+        <div id="inputContainer">
+          <div>
+            <label for="bustoJaleco">Busto(P):</label><br />
+            <input type="number" name="bustoJaleco" id="bustoJaleco" required />
+          </div>
+          <div>
+            <label for="cintJaleco">Cintura(P):</label><br />
+            <input type="number" name="cintJaleco" id="cintJaleco" required />
+          </div>
+          <div>
+            <label for="compJaleco">Comprimento(P):</label><br />
+            <input type="number" name="compJaleco" id="compJaleco" required />
+          </div>
+          <div>
+            <label for="compManga">Comp. manga(P):</label><br />
+            <input type="number" name="compManga" id="compManga" required />
+          </div>
+        </div>
+
+        <button type="submit" id="calc_Jaleco">Calcular</button>
+      </form>
+
+      <div id="tableJaleco">
+        <div id="tableJalecoContent">
+          <span id="refJaleco-table"></span>
+
+          <table>
+            <thead>
+              <tr>
+                <th class="firstCell"></th>
+                <th>PP</th>
+                <th>P</th>
+                <th>M</th>
+                <th>G</th>
+                <th>GG</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Busto</strong></td>
+                <td id="busto-ppJaleco"></td>
+                <td id="busto-pJaleco"></td>
+                <td id="busto-mJaleco"></td>
+                <td id="busto-gJaleco"></td>
+                <td id="busto-ggJaleco"></td>
+                <td>cm</td>
+              </tr>
+              <tr>
+                <td><strong>Cintura</strong></td>
+                <td id="cintura-ppJaleco"></td>
+                <td id="cintura-pJaleco"></td>
+                <td id="cintura-mJaleco"></td>
+                <td id="cintura-gJaleco"></td>
+                <td id="cintura-ggJaleco"></td>
+                <td>cm</td>
+              </tr>
+              <tr>
+                <td><strong>Comprimento</strong></td>
+                <td id="comprimento-ppJaleco"></td>
+                <td id="comprimento-pJaleco"></td>
+                <td id="comprimento-mJaleco"></td>
+                <td id="comprimento-gJaleco"></td>
+                <td id="comprimento-ggJaleco"></td>
+                <td>cm</td>
+              </tr>
+              <tr>
+                <td><strong>Comp. manga</strong></td>
+                <td id="compManga-ppJaleco"></td>
+                <td id="compManga-pJaleco"></td>
+                <td id="compManga-mJaleco"></td>
+                <td id="compManga-gJaleco"></td>
+                <td id="compManga-ggJaleco"></td>
+                <td>cm</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <button type="submit" id="removeTable-button">Sair</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

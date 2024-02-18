@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-input: #e7e7e7;
+}
+body {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  padding: 0.8rem 0;
+  border-bottom: 2px solid #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+header h1 {
+  font-size: 40px;
+}
+#jaleco {
+  width: 600px;
+  max-height: 80%;
+}
+
+#jaleco h2 {
+  background-color: var(--color-input);
+  border: none;
+  border-radius: 8px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+}
+form {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  margin: 5px auto;
+}
+
+form label {
+  font-size: 20px;
+  font-weight: 600;
+}
+form input {
+  width: 230px;
+  height: auto;
+  margin-top: 5px;
+  padding: 8px 0 8px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--color-input);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+form input::-webkit-inner-spin-button,
+form input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.form.show {
+  display: block;
+}
+
+.form {
+  display: none;
+}
+
+form button,
+#removeTable-button {
+  font-size: 20px;
+  font-weight: 600;
+  width: 30%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-input);
+}
+
+#removeTable-button {
+  margin: 2rem auto 0;
+}
+
+#refTable {
+  text-align: left;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #000;
+}
+
+#inputContainer {
+  width: 100%;
+  margin: 1rem 0 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 350px 350px;
+  gap: 20px;
+}
+
+table {
+  padding-bottom: 1.4rem;
+  display: inline-block;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+}
+
+table tr th,
+table tr td {
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border: 2px solid #b8b8b8;
+  border-radius: 5px;
+}
+
+table tr th,
+table tr td:first-child {
+  background-color: var(--color-input);
+}
+
+table tr th:first-child,
+table tr th:last-child {
+  background-color: #fff;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+  text-align: left;
+  width: auto;
+  padding: 0px 5px;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  text-align: left;
+  width: fit-content;
+  border: none;
+  padding: 0px 2px;
+}
+
+.firstCell {
+  border: none;
+}
+
+#tableJaleco {
+  padding-top: 1rem;
+  text-align: left;
+  width: 100%;
+  display: none;
+  margin: 2rem auto;
+  border-top: 1px solid #000;
+}
+
+#tableJaleco.show {
+  display: block;
+}
+
+#refJaleco-table {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background-color: var(--color-input);
+  border-radius: 8px;
+}
+
+#tableJalecoContent {
+  display: flex;
+  flex-direction: column;
+}
